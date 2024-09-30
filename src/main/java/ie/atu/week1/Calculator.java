@@ -20,6 +20,9 @@ public class Calculator {
 
         case "subtract":
             subtract(a, b); break;
+
+        case "multiply":
+            multiply(a, b); break;
     }
 
 }
@@ -31,6 +34,11 @@ public class Calculator {
                 int minus = a - b;
                 System.out.println("The total is: " + minus);
         }
+
+    public static void multiply(int a, int b){
+        int product = a * b;
+        System.out.println("The total is: " + product);
+    }
 
 
 }
