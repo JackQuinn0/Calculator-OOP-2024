@@ -17,12 +17,19 @@ public class Calculator {
     {
         case "add":
             add(a, b); break;
+
+        case "subtract":
+            subtract(a, b); break;
     }
 
 }
-        public static void add(int a, int b){
+        public static void add(int a, int b) {
             int sum = a + b;
             System.out.println("The sum is: " + sum);
+        }
+            public static void subtract(int a, int b){
+                int minus = a - b;
+                System.out.println("The total is: " + minus);
         }
 
 
