@@ -1,6 +1,7 @@
 package ie.atu.week1;
 
 import java.util.Scanner;
+import static java.lang.Math.exp;
 
 public class Calculator {
     public static void main(String[] args){
@@ -26,6 +27,8 @@ public class Calculator {
 
         case "divide":
             divide(a, b); break;
+
+        case "exponential": exp(a, b); break;
     }
 
 }
@@ -46,6 +49,11 @@ public class Calculator {
     public static void divide(int a, int b){
         int division = a / b;
         System.out.println("The total is: " + division);
+    }
+
+    public static void exp(double a, double b) {
+        double exp = Math.exp(a - b);
+        System.out.println("The exp is: " + exp);
     }
 
 
